@@ -58,4 +58,44 @@ player_db: List[Tuple[str, int, List[str], List[str]]] = [
     ),
 
 
+    (
+        "Michael Jordan",
+        15,
+        ["Basketball"],
+        ["Chicago Bulls, Washington Wizards"],
+    ),
+
+
+    (
+        "Kobe Bryant",
+        20,
+        ["Basketball"],
+        ["Los Angeles Lakers"],
+    ),
+
+
+    (
+        "Stephen Curry",
+        15,
+        ["Basketball"],
+        ["Golden State Warriors"],
+    ),
+    
+    (
+        "Kevin Durant",
+        18,
+        ["Basketball"],
+        ["Seattle Supersonics, Oklahama City Thunder, Golden State Warriors, Brooklyn Nets, Phoenix Suns"],
+    ),
+
+
+    (
+        "Russell Westbrook",
+        16,
+        ["Basketball"],
+        ["Oklahoma City Thunder, Houston Rockets, Washington Wizards, Los Angeles Lakers, Los Angeles Clippers, Denver Nuggets"],
+    ),
+    
+
+
 ]
