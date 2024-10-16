@@ -17,7 +17,39 @@ def get_sports(player: Tuple[str, int, List[str]]) -> List[str]:
 
 
 
+def years_by_name(matches: List[str]) -> List[str]:
+    years = []
+    for player in player_db:
+        if get_name(player) == matches[0]:
+            years.append(str(get_years_played(player)))
+
+    return years
+
+def players_by_year(matches: List[str]) -> List[str]:
+    players = []
+
+    for player in player_db:
+        if get_years_played(player) == int(matches[0]):
+            players.append(get_name(player))
+    
+    return players
+
+def players_by_sport(matches: List[str]) -> List[str]:
+    players = []
+    for player in player_db:
+        for sport in get_sports(player):
+            if sport == matches[0]:
+                players.append(get_name(player))
+    return players
+
+
+
+
 pa_list: List[Tuple[List[str], Callable[[List[str]], List[Any]]]] = [
+    
+    (str.split("how many years did % play"), years_by_name),
+    (str.split("what players played _ years"), players_by_year),
+    (str.split("what players played _"), players_by_sport),
 
 ]
 
@@ -33,6 +65,8 @@ def search_pa_list(src: List[str]) -> List[str]:
         a list of answers. Will be ["I don't understand"] if it finds no matches and
         ["No answers"] if it finds a match but no answers
     """
+    
+    
     answers = []
     match_exists = False
     answer_exists = False
@@ -52,3 +86,8 @@ def search_pa_list(src: List[str]) -> List[str]:
     else:
         return answers
 
+
+
+
+
+print(search_pa_list(["what", "players", "played", "Basketball"]))

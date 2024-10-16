@@ -27,12 +27,14 @@ def match(pattern: List[str], source: List[str]) -> List[str]:
         # and the source, then you know that if this is True, then the pattern has
         # ended, but the source has not) if we reached the end of the pattern but not
         # source then no match
+        
         if pind == len(pattern):
             return None
 
         # 2) check to see if the current thing in the pattern is a %
         elif pattern[pind] == "%":
             # at end of pattern grab the rest of the source
+
             if pind == (len(pattern) - 1):
                 return result + [" ".join(source[sind:])]
             else:
