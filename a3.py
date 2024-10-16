@@ -4,16 +4,19 @@ from typing import List, Tuple, Callable, Any
 
 
 
-def get_name(player: Tuple[str, int, List[str]]) -> str:
+def get_name(player: Tuple[str, int, List[str], List[str]]) -> str:
     return player[0]
 
 
-def get_years_played(player: Tuple[str, int, List[str]]) -> int:
+def get_years_played(player: Tuple[str, int, List[str], List[str]]) -> int:
     return player[1]
 
 
-def get_sports(player: Tuple[str, int, List[str]]) -> List[str]:
+def get_sports(player: Tuple[str, int, List[str], List[str]]) -> List[str]:
     return player[2]
+
+def get_teams(player: Tuple[str, int, List[str], List[str]]) -> List[str]:
+    return player[3]
 
 
 
