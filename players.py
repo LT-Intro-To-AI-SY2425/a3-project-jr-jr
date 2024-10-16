@@ -8,4 +8,18 @@ player_db: List[Tuple[str, int, List[str]]] = [
         ["Basketball"],
     ),
     
+
+     (
+        "Lionel Messi",
+        20,
+        ["Soccer"],
+    ),
+
+     (
+        "Michael Phelps",
+        24,
+        ["Swimming"],
+    ),
+
+
 ]
