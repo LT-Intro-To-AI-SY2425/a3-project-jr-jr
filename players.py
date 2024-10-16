@@ -17,6 +17,50 @@ player_db: List[Tuple[str, int, List[str], List[str]]] = [
         ["Argentina", "Barcelona"],
     ),
 
+    
+(
+        "Neymar Jr",
+        15,
+        ["Soccer"],
+        ["Santos, FC Barcelona, PSG, Al Hilal"],
+    ),
+
+
+(
+        "Pele",
+        21,
+        ["Soccer"],
+        ["Santos, New York Cosmos"],
+    ),
+
+
+
+
+(
+        "Cole Palmer",
+        4,
+        ["Soccer"],
+        ["Manchester City, Chelsea"],
+    ),
+
+
+
+(
+        "Pedri",
+        5,
+        ["Soccer"],
+        ["Las Palmas, FC Barcelona"],
+    ),
+
+
+(
+        "Cristiano Ronaldo",
+        22,
+        ["Soccer"],
+        ["Sporting CP, Manchester United, Real Madrid, Juventus, Al Nassr "],
+    ),
+
+
      (
         "Michael Phelps",
         24,
@@ -137,6 +181,7 @@ player_db: List[Tuple[str, int, List[str], List[str]]] = [
         ["Cricket"],
         ["Sri Lanka's national team"],
     ),
+
 
 
 ]
