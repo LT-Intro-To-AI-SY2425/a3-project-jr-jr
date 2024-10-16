@@ -95,7 +95,48 @@ player_db: List[Tuple[str, int, List[str], List[str]]] = [
         ["Basketball"],
         ["Oklahoma City Thunder, Houston Rockets, Washington Wizards, Los Angeles Lakers, Los Angeles Clippers, Denver Nuggets"],
     ),
-    
+
+    (
+        "Pat Cummins",
+        30,
+        ["Cricket"],
+        ["Australia's Men national team"],
+    ),
+
+    (
+        "Shane Warne",
+        54,
+        ["Cricket"],
+        ["Australia's national team"],
+    ),
+
+    (
+        "Daryl Mitchell",
+        32,
+        ["Cricket"],
+        ["New Zealand's national team"],
+    ),
+
+    (
+        "Sachin Tendulkar",
+        50,
+        ["Cricket"],
+        ["India's Men national team"],
+    ),
+
+    (
+        "Kumar Sangakkara",
+        46,
+        ["Cricket"],
+        ["Sri Lanka's national team"],
+    ),
+
+    (
+        "Muttiah Muralitharan",
+        51,
+        ["Cricket"],
+        ["Sri Lanka's national team"],
+    ),
 
 
 ]
