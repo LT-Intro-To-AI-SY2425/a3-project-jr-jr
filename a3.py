@@ -55,6 +55,14 @@ def players_by_name(matches: List[str]) -> List[str]:
     return players
 
 
+def players_in_team(matches:List[str]) -> List[str]:
+    players = []
+    for player in player_db:
+        for sport in get_sports(player):
+            if get_teams(player) == matches[0]:
+                players.append(get_name(player))
+    return players
+
 
 
 
@@ -63,6 +71,7 @@ pa_list: List[Tuple[List[str], Callable[[List[str]], List[Any]]]] = [
     (str.split("how many years did % play"), years_by_name),
     (str.split("what players played _ years"), players_by_year),
     (str.split("what players played _"), players_by_sport),
+    (str.split("what players played on _"), players_in_team),
 
 ]
 
