@@ -6,7 +6,7 @@ player_db: List[Tuple[str, int, List[str], List[str]]] = [
         "Lebron James",
         22,
         ["Basketball"],
-        ["Cavaliers", "Heat", "Lakers"],
+        ["Cleveland Cavaliers", "Miami Heat", "Los Angeles Lakers"],
     ),
     
 
