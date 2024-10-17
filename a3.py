@@ -46,6 +46,16 @@ def players_by_sport(matches: List[str]) -> List[str]:
     return players
 
 
+def players_by_name(matches: List[str]) -> List[str]:
+    players = []
+    for player in player_db:
+        for sport in get_sports(player):
+            if name == matches[0]:
+                players.append(get_name(player))
+    return players
+
+
+
 
 
 pa_list: List[Tuple[List[str], Callable[[List[str]], List[Any]]]] = [
