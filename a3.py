@@ -71,6 +71,7 @@ pa_list: List[Tuple[List[str], Callable[[List[str]], List[Any]]]] = [
     (str.split("how many years did % play"), years_by_name),
     (str.split("what players played _ years"), players_by_year),
     (str.split("what players played _"), players_by_sport),
+    (str.split("what players name is _"), players_by_name),
     (str.split("what players played on _"), players_in_team),
 
 ]
